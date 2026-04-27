@@ -1,0 +1,13 @@
+torch
+torchvision
+transformers
+sentence-transformers
+numpy
+Pillow
+flask
+pyngrok
+requests
+beautifulsoup4
+scikit-learn
+matplotlib
+pandas
