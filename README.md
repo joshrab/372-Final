@@ -35,7 +35,7 @@ Then, run the colab file linked in SETUP.md or under colab/
 ## Video Links
 
 - **Demo Video:** [[demo](https://youtu.be/EdpmJWsFP0A)]
-- **Technical Walkthrough:** [link]
+- **Technical Walkthrough:** [[technical walkthrough](https://youtu.be/V04C1Bgu0QM)]
 
 ---
 

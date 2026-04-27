@@ -2,6 +2,7 @@ import argparse
 import torch
 from classifier import load_classifier, classify_image, get_class_names
 from rag import load_rag, chat
+import json
 
 WEIGHTS = "../models/resnet_plants.pth"
 SL_PATH = "../data/class_names.json"
@@ -19,7 +20,9 @@ def main():
 
     species = None
     if args.image:
-        class_names = get_class_names(SL_PATH)
+        with open(SL_PATH) as f:
+            class_names = json.load(f)
+
         model = load_classifier(WEIGHTS, len(class_names), device)
         species = classify_image(args.image, model, class_names, device)
         print(f"predicted: {species}")

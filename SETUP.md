@@ -15,11 +15,11 @@ project/
 ├── data/
 │   └── wiki_kb.json            # plant knowledge base
 │   └── class_names.json        # generated class labels
-├── models/
+├── notebooks/
 │   └── 372_Final_Project_CNN.ipynb   # useful for downloading data, inspecting model
 │   └── 372_Final_Project_RAG.ipynb   # experimenting with RAG model
-├── notebooks/
-│   └── wiki_kb.json            # plant knowledge base
+├── models/
+│   └── resnet_plants.json            # plant knowledge base
 └── colab/                   # 
 │   └── Final_Project_Colab.ipynb       # if you have GPU on colab, run setup instructions
 ```
@@ -39,7 +39,7 @@ project/
 ### 1. Install dependencies
 
 ```bash
-pip install flask transformers torch torchvision sentence-transformers pillow json
+pip install -r requirements.txt
 ```
 
 ### 2. Run the server
